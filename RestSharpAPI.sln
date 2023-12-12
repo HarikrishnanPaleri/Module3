@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestEx", "RestEx\RestEx.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentRest#", "AssignmentRest#\AssignmentRest#.csproj", "{B69432A5-E3F4-49FC-ACE9-AB79A4EF5E74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestExNunit", "RestExNunit\RestExNunit.csproj", "{38F2331D-3E53-4096-BB9C-5D573865D4C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentNunit", "AssignmentNunit\AssignmentNunit.csproj", "{63E44777-3E3F-47AF-AABF-81A8824FFDF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B69432A5-E3F4-49FC-ACE9-AB79A4EF5E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B69432A5-E3F4-49FC-ACE9-AB79A4EF5E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B69432A5-E3F4-49FC-ACE9-AB79A4EF5E74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F2331D-3E53-4096-BB9C-5D573865D4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F2331D-3E53-4096-BB9C-5D573865D4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F2331D-3E53-4096-BB9C-5D573865D4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F2331D-3E53-4096-BB9C-5D573865D4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E44777-3E3F-47AF-AABF-81A8824FFDF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E44777-3E3F-47AF-AABF-81A8824FFDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E44777-3E3F-47AF-AABF-81A8824FFDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E44777-3E3F-47AF-AABF-81A8824FFDF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
