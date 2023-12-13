@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using AssignmentNunit.Utilities;
+using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 namespace AssignmentNunit
 {
     [TestFixture]
-    internal class JsonPlaceHolderAPITests
+    internal class JsonPlaceHolderAPITests:CoreCodes
     {
         private RestClient client;
         private string baseUrl = "https://jsonplaceholder.typicode.com/";
