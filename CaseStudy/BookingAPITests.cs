@@ -17,7 +17,7 @@ namespace CaseStudy
         {
             test = extent.CreateTest("Get Booking By Id");
             Log.Information("Get Booking by Id test started");
-            var getBookingByIdreq = new RestRequest("booking/"+bookinId, Method.Get);
+            var getBookingByIdreq = new RestRequest("booking/" + bookinId, Method.Get);
             getBookingByIdreq.AddHeader("Content-Type", "application/json")
                    .AddHeader("Accept", "application/json");
             var response = client.Execute(getBookingByIdreq);
@@ -38,7 +38,7 @@ namespace CaseStudy
                 Log.Information("Total Price Returned");
                 Assert.NotNull(bookingDetailsResponse.DepositPaid);
                 Log.Information("Deposit paid Returned");
-                
+
                 Assert.IsNotEmpty(dates?.CheckIn);
                 Log.Information("CheckIn details Returned");
                 Assert.NotNull(dates?.CheckOut);
@@ -168,9 +168,9 @@ namespace CaseStudy
         public void DeleteBooking(int userId)
         {
             test = extent.CreateTest("Delete Booking");
-            var token=CreateToken();
-            var deleterequest = new RestRequest("booking/"+userId, Method.Delete);
-            deleterequest.AddHeader("Cookie", "token="+token);
+            var token = CreateToken();
+            var deleterequest = new RestRequest("booking/" + userId, Method.Delete);
+            deleterequest.AddHeader("Cookie", "token=" + token);
             var response = client.Execute(deleterequest);
             try
             {
@@ -186,19 +186,19 @@ namespace CaseStudy
                 test.Fail("Delete users test failed");
             }
         }
-        
+
         public string CreateToken()
         {
-           
+
             var CreateTokenrequest = new RestRequest("auth", Method.Post);
 
             CreateTokenrequest.AddHeader("Content-Type", "application/json");
-            CreateTokenrequest.AddJsonBody(new { username = "admin", password= "password123" });
+            CreateTokenrequest.AddJsonBody(new { username = "admin", password = "password123" });
             var response = client.Execute(CreateTokenrequest);
-            
-               
-                var getToken = JsonConvert.DeserializeObject<Authentication>(response.Content);
-               
+
+
+            var getToken = JsonConvert.DeserializeObject<Authentication>(response.Content);
+
             return getToken.Token;
         }
     }
